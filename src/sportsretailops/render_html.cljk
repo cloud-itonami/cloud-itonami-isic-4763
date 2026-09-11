@@ -6,7 +6,7 @@
   generator at all. This namespace drives the REAL actor stack
   (`sportsretailops.operation` -> `sportsretailops.governor` ->
   `sportsretailops.store`) through a scenario adapted from this repo's
-  own `sportsretailops.sim` demo driver (`clojure -M:dev:run`, confirmed
+  own `sportsretailops.sim` demo driver (`kbb -M:dev:run`, confirmed
   BEFORE writing this file to produce a sensible ledger against the real
   seeded store ids `store-1`..`store-3` and vendor ids `vendor-1`..
   `vendor-2` -- ids that DO match `sportsretailops.store/demo-data`, so
@@ -17,7 +17,7 @@
   numbers, no timestamps in the page content, byte-identical across
   reruns against the same seed (verify by diffing two consecutive runs).
 
-  Usage: `clojure -M:dev:render-html [out-file]`
+  Usage: `kbb -M:dev:render-html [out-file]`
   (default `docs/samples/operator-console.html`)."
   (:require [jp-go-dds.skin]
             [kotoba.lang.text :as str]
@@ -185,7 +185,7 @@
      "<main>\n"
      "  <section class=\"card\">\n"
      "    <h2>Specialized sporting-equipment retail stores</h2>\n"
-     "    <p class=\"muted\">Demo snapshot — build-time-generated from <code>sportsretailops.store</code> via <code>sportsretailops.render-html</code> (<code>clojure -M:dev:render-html</code>), regenerated from the real actor stack.</p>\n"
+     "    <p class=\"muted\">Demo snapshot — build-time-generated from <code>sportsretailops.store</code> via <code>sportsretailops.render-html</code> (<code>kbb -M:dev:render-html</code>), regenerated from the real actor stack.</p>\n"
      "    <table>\n"
      "      <thead><tr><th>Store</th><th>Name</th><th>Registration / verification</th><th>Last op status</th></tr></thead>\n"
      "      <tbody>\n"
