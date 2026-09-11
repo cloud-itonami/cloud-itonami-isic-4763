@@ -151,16 +151,16 @@ gated the same way by the independent SportsRetailGovernor.
 
 ```bash
 # Install dependencies (if inside the superproject, use :dev alias for local overrides)
-clojure -M:dev -P
+kbb -M:dev -P
 
 # Run tests
-clojure -M:test
+kbb -M:test
 
 # Run linter
-clojure -M:lint
+kbb -M:lint
 
 # Run demo
-clojure -M:run
+kbb -M:run
 ```
 
 ### Test suite
