@@ -1,6 +1,6 @@
 (ns sportsretailops.store-contract-test
   "Contract tests for `sportsretailops.store/Store` protocol."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [sportsretailops.store :as store]))
 
 (deftest mem-store-store-lookup

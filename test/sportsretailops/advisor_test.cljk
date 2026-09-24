@@ -1,6 +1,6 @@
 (ns sportsretailops.advisor-test
   "Unit tests of `sportsretailops.advisor` proposal generation."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [sportsretailops.advisor :as adv]
             [sportsretailops.store :as store]))
 
